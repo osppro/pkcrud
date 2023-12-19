@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\UserController;
+Route::resource('users', UserController::class);
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +17,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    // return view('welcome');
-    return "Hello World";
+    return view('welcome');
 });
